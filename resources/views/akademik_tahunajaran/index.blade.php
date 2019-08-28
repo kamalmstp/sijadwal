@@ -3,7 +3,6 @@
 @section('content')
 
 <!-- Begin Page Content -->
-<<<<<<< HEAD
 <div class="container-fluid">
 
   <!-- Content Row -->
@@ -31,12 +30,6 @@
         <div class="row">
             <div class="col-lg-12">              
                 @include ('errors.list') {{-- Including error file --}}
-=======
-<div class="col-12">
-          <div class="card">
-            <div class="card-header">
-              <h3 class="card-title">Tahun Ajaran</h3>
->>>>>>> 59a083ee1a375c8d85bb3418dec9e0482c6ddfab
             </div>
         </div>  
         <div class="table-responsive">

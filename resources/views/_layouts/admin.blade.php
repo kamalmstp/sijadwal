@@ -32,17 +32,10 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
       </li>
-<<<<<<< HEAD
       <li class="nav-item d-none d-sm-inline-block">
         <a href="{{route('home')}}" class="nav-link">Home</a>
       </li>
     </ul>
-
-=======
-    </ul>
-
-
->>>>>>> 59a083ee1a375c8d85bb3418dec9e0482c6ddfab
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
@@ -59,11 +52,7 @@
     <a href="index3.html" class="brand-link">
       <img src="{{asset('img/core-img/logounlam.png')}}" alt="ULM Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-<<<<<<< HEAD
       <span class="brand-text font-weight-light">FH - SIJADWAL</span>
-=======
-      <span class="brand-text font-weight-light">Sijadwal FH</span>
->>>>>>> 59a083ee1a375c8d85bb3418dec9e0482c6ddfab
     </a>
 
     <!-- Sidebar -->
@@ -80,7 +69,7 @@
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
-      @include('include_admin.navigation2')
+      @include('include_admin.navigation')
       </nav>
       <!-- /.sidebar-menu -->
     </div>
@@ -94,7 +83,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Dashboard v2</h1>
+            
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -151,13 +140,10 @@
 <!-- PAGE SCRIPTS -->
 <script src="{{asset('lte/dist/js/pages/dashboard2.js')}}"></script>
 
-<<<<<<< HEAD
 <!-- Page level custom scripts -->
 <script src="{{asset('js/demo/datatables-demo.js')}}"></script>
 
 <script src="{{asset('select2-master/dist/js/select2.min.js')}}"></script>
-=======
->>>>>>> 59a083ee1a375c8d85bb3418dec9e0482c6ddfab
 <script>
   $(function () {
     $("#example1").DataTable();
