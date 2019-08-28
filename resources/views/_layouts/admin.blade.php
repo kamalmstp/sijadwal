@@ -196,7 +196,7 @@
       <div class="container-fluid">
         <!-- Info boxes -->
         <div class="row">
-
+        @yield('content')
         </div>
         <!-- /.row -->
 
@@ -229,6 +229,9 @@
 <script src="{{asset('lte/plugins/jquery/jquery.min.js')}}"></script>
 <!-- Bootstrap -->
 <script src="{{asset('lte/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<!-- Data Tables -->
+<script src="{{asset('lte/plugins/datatables/jquery.dataTables.js')}}"></script>
+<script src="{{asset('lte/plugins/datatables/dataTables.bootstrap4.js')}}"></script>
 <!-- overlayScrollbars -->
 <script src="{{asset('lte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
 <!-- AdminLTE App -->
@@ -248,5 +251,6 @@
 
 <!-- PAGE SCRIPTS -->
 <script src="{{asset('lte/dist/js/pages/dashboard2.js')}}"></script>
+
 </body>
 </html>

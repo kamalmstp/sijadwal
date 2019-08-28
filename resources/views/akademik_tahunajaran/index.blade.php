@@ -3,46 +3,23 @@
 @section('content')
 
 <!-- Begin Page Content -->
-<div class="container-fluid">
-
-  <!-- Content Row -->
-  <div class="row">
-
-    <div class="col-lg-12 mb-12">
-
-      <!-- Approach -->
-      <div class="card shadow mb-4">
-        <div class="card-header py-3">
-          <h6 class="m-0 font-weight-bold text-primary">TAHUN AJARAN</h6>
-        </div>
-        <div class="card-body">
-                    <a href="{{ route('tambahtahun_ajaran')}}" class="btn btn-success">New</a>
-        <hr>
-        @if(Session::has('flash_message'))
-            <div class="row">   
-            <div class="col-lg-12">     
-                <div class="alert alert-success"><em> {!! session('flash_message') !!}</em>
-                </div>
+<div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">DataTable with default features</h3>
             </div>
-            </div>
-        @endif 
-
-        <div class="row">
-            <div class="col-lg-12">              
-                @include ('errors.list') {{-- Including error file --}}
-            </div>
-        </div>  
-        <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0" style="color: #000;">
-                    <thead>
-                    <tr>
-                        <th>No</th>
-                        <th>Periode Tahun Ajaran</th>
-                        <th>Operation</th>
-                    </tr>                           
-                    </thead>
-                    <tbody>
-                        <?php $no=0; ?>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <table id="example2" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Periode Tahun Ajaran</th>
+                    <th>Operation</th>
+                </tr> 
+                </thead>
+                <tbody>
+                <?php $no=0; ?>
                         @foreach($tahun_ajaran as $thn)
                         <tr>
                             <td>{{++$no}}</td>
@@ -62,16 +39,15 @@
                             </td> 
                         </tr>
                         @endforeach
-                    </tbody>
-                </table>
+                </tbody>
+                <tfoot>
+               
+                </tfoot>
+              </table>
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
         </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-</div>
 <!-- /.container-fluid -->
-
 @endsection
