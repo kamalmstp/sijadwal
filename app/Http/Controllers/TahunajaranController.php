@@ -11,8 +11,10 @@ class TahunajaranController extends Controller
 	//awal admin tahun ajaran
 	public function index()
 	{
-	  	$tahun_ajaran = tahun_ajaran::orderBy('created_at', 'desc')->get();
-		return view('akademik_tahunajaran.index', compact('tahun_ajaran'));
+		  $tahun_ajaran = tahun_ajaran::orderBy('created_at', 'desc')->get();
+		  $name = "tahunajaran";
+		  $title = "Tahun Ajaran";
+		return view('akademik_tahunajaran.index', compact('tahun_ajaran', 'name', 'title'));
 	}
 
 	public function tambahtahun_ajaran()

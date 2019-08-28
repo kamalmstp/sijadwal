@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>AdminLTE 3 | Dashboard 2</title>
+  <title>Sijadwal | FH</title>
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="{{asset('lte/plugins/fontawesome-free/css/all.min.css')}}">
@@ -17,6 +17,10 @@
   <link rel="stylesheet" href="{{asset('lte/dist/css/adminlte.min.css')}}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="{{asset('lte/plugins/datatables/dataTables.bootstrap4.css')}}">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
@@ -28,11 +32,17 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
       </li>
+<<<<<<< HEAD
       <li class="nav-item d-none d-sm-inline-block">
         <a href="{{route('home')}}" class="nav-link">Home</a>
       </li>
     </ul>
 
+=======
+    </ul>
+
+
+>>>>>>> 59a083ee1a375c8d85bb3418dec9e0482c6ddfab
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
@@ -43,13 +53,17 @@
   </nav>
   <!-- /.navbar -->
 
-  <!-- Main Sidebar Container -->
+  <!-- Main Sideb ar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
       <img src="{{asset('img/core-img/logounlam.png')}}" alt="ULM Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
+<<<<<<< HEAD
       <span class="brand-text font-weight-light">FH - SIJADWAL</span>
+=======
+      <span class="brand-text font-weight-light">Sijadwal FH</span>
+>>>>>>> 59a083ee1a375c8d85bb3418dec9e0482c6ddfab
     </a>
 
     <!-- Sidebar -->
@@ -85,21 +99,14 @@
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
-    <!-- /.content-header -->
 
-    <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-        <!-- Info boxes -->
         <div class="row">
         @yield('content')
         </div>
-        <!-- /.row -->
-
-        <!-- /.row -->
-      </div><!--/. container-fluid -->
+      </div>
     </section>
-    <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
 
@@ -144,10 +151,13 @@
 <!-- PAGE SCRIPTS -->
 <script src="{{asset('lte/dist/js/pages/dashboard2.js')}}"></script>
 
+<<<<<<< HEAD
 <!-- Page level custom scripts -->
 <script src="{{asset('js/demo/datatables-demo.js')}}"></script>
 
 <script src="{{asset('select2-master/dist/js/select2.min.js')}}"></script>
+=======
+>>>>>>> 59a083ee1a375c8d85bb3418dec9e0482c6ddfab
 <script>
   $(function () {
     $("#example1").DataTable();
