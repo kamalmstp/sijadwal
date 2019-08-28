@@ -6,7 +6,7 @@
 <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">DataTable with default features</h3>
+              <h3 class="card-title">Tahun Ajaran</h3>
             </div>
             <!-- /.card-header -->
             <div class="card-body">
@@ -25,7 +25,7 @@
                             <td>{{++$no}}</td>
                             <td>{{$thn->tahun_ajaran}} {{$thn->semester}}</td>
                             <td>
-                                <div class="row">
+                            <div class="row">
                                 &nbsp;&nbsp;<a class="fa fa-edit" href="{{ route('edittahun_ajaran', $thn->id_tahunajaran) }}" style="color: #000;">&nbsp;Edit</a>&nbsp;&nbsp;
 
                                 {!! Form::open(['method' => 'DELETE', 'route' => ['deletetahun_ajaran', $thn->id_tahunajaran] ]) !!}
@@ -35,7 +35,7 @@
                                   overflow: hidden; padding: 0px; ">
                                   <i class="fa fa-trash" ></i><span style="color: #000; font-weight: bold;">Delete</span></button>
                                 {!! Form::close() !!}   
-                                </div>                                  
+                                </div>                                
                             </td> 
                         </tr>
                         @endforeach
