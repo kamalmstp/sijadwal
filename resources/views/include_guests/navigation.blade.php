@@ -5,10 +5,10 @@
     <div class="mag-main-menu" id="sticker">
         <div class="classy-nav-container breakpoint-off">
             <!-- Menu -->
-            <nav class="classy-navbar justify-content-between" id="magNav">
+            <nav class="classy-navbar justify-content-between bg-dark" id="magNav">
 
                 <!-- Nav brand -->
-                <a href="{{url('/')}}" class="nav-brand"><img src="{{asset('img/core-img/logounlam.png')}}" alt="" style="width: 70px;"></a>
+                <a href="{{url('/')}}" class="nav-brand"><img src="{{asset('img/core-img/logoulm.png')}}" alt="" style="width: 50px;"></a>
 
                 <!-- Navbar Toggler -->
                 <div class="classy-navbar-toggler">
@@ -27,7 +27,7 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul>
-                                <li class="active"><a href="{{url('/')}}">Home</a></li>
+                                <li><a href="{{url('/')}}">Home</a></li>
                                 <li><a href="{{route('jadwal_guest')}}">Jadwal</a></li>
                                 <li><a href="{{route('layarfulljadwalguest')}}" target="_blank">Layar Full Jadwal</a></li>
                                 <li><a href="{{route('layarfullpengumumanguest')}}" target="_blank">Layar Full Pengumuman</a></li>

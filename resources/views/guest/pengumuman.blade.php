@@ -1,12 +1,12 @@
 @extends('_layouts.base')
 
 @section('judulawal') 
-<section class="breadcrumb-area bg-img bg-overlay" style="background-image: url(../img/core-img/logoulm.jpg);">
+<section class="breadcrumb-area bg-img bg-overlay" style="background-image: url(../img/bg-img/FH.jpg);">
     <div class="container h-100">
         <div class="row h-100 align-items-center">
             <div class="col-12">
                 <div class="breadcrumb-content">
-                    <h2>SIJADWAL</h2>
+                    <h2>Sijadwal</h2>
                 </div>
             </div>
         </div>

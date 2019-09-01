@@ -354,6 +354,7 @@ input:focus {
       .header-area .mag-main-menu .classy-navbar .classynav ul li a {
         font-weight: 500;
         text-transform: uppercase;
+        color: #ffffff;
         font-size: 13px;
         letter-spacing: 1px; }
         @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -450,6 +451,7 @@ input:focus {
             color: #ed3974; }
     .header-area .mag-main-menu .login-btn {
       position: relative;
+      color: #ffffff;
       z-index: 1;
       padding: 0 30px;
       height: 70px;

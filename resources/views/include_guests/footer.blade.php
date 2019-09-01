@@ -7,7 +7,7 @@
                     <div class="footer-widget">
                         <!-- Logo -->
                         <a href="#" class="foo-logo" style="color: white; font-size: 20px;">Selamat Datang</a>
-                        <p style="text-align: justify;">sistem ini menyediakan informasi jadwal perkuliahan dari tiga Program Studi yaitu, Prodi Manajemen, Prodi Akuntansi dan Prodi Ilmu Ekonomi dan Studi Pembangunan.</p>
+                        <p style="text-align: justify;">Sistem ini menyediakan informasi jadwal perkuliahan Fakultas Hukum Universitas Lambung Mangkurat.</p>
                         <div class="footer-social-info">
                             <a href="https://www.facebook.com/fakultashukum.ulm" class="facebook"><i class="fa fa-facebook"></i></a>
                             <a href="https://www.instagram.com/bemfh_ulm/" class="instagram"><i class="fa fa-instagram"></i></a>
