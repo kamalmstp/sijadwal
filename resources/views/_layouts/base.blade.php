@@ -24,6 +24,8 @@
 
 <body>
 
+  <div class="wrapper">
+
     @include('include_guests.navigation')
 
     <!-- ##### Breadcrumb Area Start ##### -->
@@ -49,7 +51,7 @@
     <!-- ##### Archive Post Area End ##### -->
 
     @include('include_guests.footer')
-
+</div>
     <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
     <script src="{{asset('js/jquery/jquery-2.2.4.min.js')}}"></script>
@@ -70,13 +72,13 @@
 $(document).ready( function () {
     $('#myTable').DataTable({"autoWidth": false});
 } );
-</script>   
+</script>
 
 <script>
 $(document).ready( function () {
     $('#myTable2').DataTable({"autoWidth": false});
 } );
-</script>  
+</script>
 </body>
 
 </html>

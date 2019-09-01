@@ -77,6 +77,7 @@ return array(
     'Carbon\\CarbonPeriod' => $vendorDir . '/nesbot/carbon/src/Carbon/CarbonPeriod.php',
     'Carbon\\CarbonTimeZone' => $vendorDir . '/nesbot/carbon/src/Carbon/CarbonTimeZone.php',
     'Carbon\\Cli\\Invoker' => $vendorDir . '/nesbot/carbon/src/Carbon/Cli/Invoker.php',
+    'Carbon\\Exceptions\\BadUnitException' => $vendorDir . '/nesbot/carbon/src/Carbon/Exceptions/BadUnitException.php',
     'Carbon\\Exceptions\\InvalidDateException' => $vendorDir . '/nesbot/carbon/src/Carbon/Exceptions/InvalidDateException.php',
     'Carbon\\Exceptions\\NotAPeriodException' => $vendorDir . '/nesbot/carbon/src/Carbon/Exceptions/NotAPeriodException.php',
     'Carbon\\Factory' => $vendorDir . '/nesbot/carbon/src/Carbon/Factory.php',

@@ -1,6 +1,6 @@
 @extends('_layouts.base')
 
-@section('judulawal') 
+@section('judulawal')
 <section class="breadcrumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/FH.jpg);">
     <div class="container h-100">
         <div class="row h-100 align-items-center">
@@ -14,7 +14,7 @@
 </section>
 @endsection
 
-@section('menupengumuman') 
+@section('menupengumuman')
 <div class="mag-breadcrumb py-5">
     <div class="container">
         <div class="row">
@@ -37,8 +37,8 @@
         @foreach($berita as $brt)
         <?php
           $split1    = explode('-',  $brt->dari);
-          $tgl_indo1 = $split1[2] . ' ' . $bulan[ (int)$split1[1] ] . ' ' . $split1[0];  
-        ?>                        
+          $tgl_indo1 = $split1[2] . ' ' . $bulan[ (int)$split1[1] ] . ' ' . $split1[0];
+        ?>
         <!-- Single Catagory Post -->
 
             <!-- Thumbnail -->
@@ -57,18 +57,18 @@
 
         @endforeach
 
-        @if (isset($berita) && $berita != NULL) 
+        @if (isset($berita) && $berita != NULL)
         <nav aria-label="navigation" style="margin-bottom: 30px;">
             {{ $berita->appends(request()->input())->links() }}
         </nav>
         @else
             // Do something which tells the user that there are no books
-        @endif 
+        @endif
     </div>
 </div>
 @endsection
 
-@section('content2') 
+@section('content2')
 <div class="col-12 col-md-6 col-lg-5 col-xl-4">
     <div class="sidebar-area bg-white mb-30 box-shadow">
         <!-- Sidebar Widget -->
@@ -79,7 +79,7 @@
                 <a href="https://www.facebook.com/fakultashukum.ulm" class="facebook-fans"><i class="fa fa-facebook"></i> FH - UNLAM </a>
                 <!-- Twitter -->
                 <a href="https://twitter.com/bemfhulm?lang=en" class="twitter-followers"><i class="fa fa-twitter"></i> FH - UNLAM</a>
-                <a href="https://www.instagram.com/bemfh_ulm/" class="instagram-followers"><i class="fa fa-instagram"></i> FH - UNLAM</a>                
+                <a href="https://www.instagram.com/bemfh_ulm/" class="instagram-followers"><i class="fa fa-instagram"></i> FH - UNLAM</a>
             </div>
         </div>
 

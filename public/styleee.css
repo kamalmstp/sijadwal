@@ -17,7 +17,14 @@
 body {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
-  background-color: #f2f4f5; }
+  background-color: #f2f4f5;
+  background-image: url("https://colorlib.com/travelify/wp-content/themes/travelify/images/background.png");
+  background-position: left top;
+  background-size: auto auto;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  border-top: 6px solid #000;
+}
 
 h1,
 h2,
@@ -64,6 +71,15 @@ img {
 /* :: 3.1.0 Spacing */
 .mt-15 {
   margin-top: 15px !important; }
+
+.wrapper {
+    margin: 0px auto;
+    background-color: #F8F8F8;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    max-width: 1018px;
+    margin-top: 15px;
+}
 
 .mt-30 {
   margin-top: 30px !important; }

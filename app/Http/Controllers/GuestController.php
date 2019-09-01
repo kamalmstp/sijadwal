@@ -30,7 +30,7 @@ class GuestController extends Controller
         'Oktober',
         'November',
         'Desember'
-        ); 
+        );
         return view('welcome', compact('berita','bulan'));
     }
 
@@ -47,10 +47,10 @@ class GuestController extends Controller
         'Oktober',
         'November',
         'Desember'
-        );        
+        );
         $berita = Berita::where('id_berita', '=' , $id)->first();
         return view('guest.pengumuman', compact('berita','bulan'));
-    }   
+    }
 
     public function jadwal(){
         date_default_timezone_set('Asia/Jakarta');
@@ -65,8 +65,8 @@ class GuestController extends Controller
         $tgl=date('d-m-Y');
         $tes = $hari[ date('N') ];
 
-        $prodi = Prodi::orderBy('created_at', 'asc')->get();  
-        $ruangan = ruangan::orderBy('created_at', 'asc')->get();  
+        $prodi = Prodi::orderBy('created_at', 'asc')->get();
+        $ruangan = ruangan::orderBy('created_at', 'asc')->get();
         $tahun_ajaran = tahun_ajaran::orderBy('created_at', 'asc')->get();
         $jadwalguest = Jadwalguest::orderBy('created_at', 'asc')->first();
         $data = Jadwalfh::where('id_tahunajaran', $jadwalguest->id_tahunajaran)->orderBy('hari', 'desc')->get();
@@ -76,7 +76,7 @@ class GuestController extends Controller
             FROM jadwalfh WHERE id_tahunajaran = $jadwalguest->id_tahunajaran AND hari != 'Jumat' AND hari = '$tes') AND nama_jam != '09:50:00' AND nama_jam != '14:00:00'");
         $jamjumat = Db::select(
             "SELECT * FROM tb_jam WHERE nama_jam NOT IN (SELECT jam
-            FROM jadwalfh WHERE id_tahunajaran = $jadwalguest->id_tahunajaran AND hari = 'Jumat') AND nama_jam != '10:30:00' AND nama_jam != '13:30:00'");        
+            FROM jadwalfh WHERE id_tahunajaran = $jadwalguest->id_tahunajaran AND hari = 'Jumat') AND nama_jam != '10:30:00' AND nama_jam != '13:30:00'");
     	return view('guest.jadwal', compact('prodi','data','datark','hari','tgl','ruangan','tes','jam','jamjumat','jadwalguest','tahun_ajaran'));
     }
 
@@ -89,7 +89,7 @@ class GuestController extends Controller
               'Jumat',
               'Sabtu',
               'Minggu'
-            );        
+            );
         $tes = $hari[ date('N') ];
         $tgl=date('d-m-Y');
         $tglberita=date('Y-m-d');
@@ -100,10 +100,10 @@ class GuestController extends Controller
         $data2 = Db::select(
               "SELECT * FROM jadwalfh WHERE hari = '$tes' and id_tahunajaran=$jadwalguest->id_tahunajaran ORDER BY hari, jam, prodi, semester
               LIMIT 10 OFFSET 10"
-        );      
+        );
         $data3 = Db::select(
               "SELECT * FROM jadwalfh WHERE hari = '$tes' and id_tahunajaran=$jadwalguest->id_tahunajaran ORDER BY hari, jam, prodi, semester LIMIT 10 OFFSET 20"
-        );                  
+        );
 
         $data4 = Db::select(
               "SELECT * FROM jadwalfh WHERE hari = '$tes' and id_tahunajaran=$jadwalguest->id_tahunajaran ORDER BY hari, jam, prodi, semester LIMIT 10 OFFSET 30"
@@ -135,7 +135,7 @@ class GuestController extends Controller
         $jmldata7=count($data7);
         $jmldata8=count($data8);
     	return view('guest.layarfulljadwal',compact('tgl','tes','hari','data','data2','data3','data4','data5','data6','data7','data8','jmldata','jmldata2','jmldata3','jmldata4','jmldata5','jmldata6','jmldata7','jmldata8'));
-    }   
+    }
 
     public function layarfullpengumuman(){
         date_default_timezone_set('Asia/Jakarta');
@@ -146,26 +146,26 @@ class GuestController extends Controller
               'Jumat',
               'Sabtu',
               'Minggu'
-            );        
+            );
         $tes = $hari[ date('N') ];
         $tgl=date('d-m-Y');
-        $tglberita=date('Y-m-d');        
+        $tglberita=date('Y-m-d');
         $berita = Db::select("SELECT * FROM berita WHERE '$tglberita' >= dari and '$tglberita' <= sampai ORDER BY isi DESC ");
-     
-        $jmlberita = count($berita);    
-          
+
+        $jmlberita = count($berita);
+
         $berita2 = Db::select("SELECT * FROM berita WHERE dari >= '$tglberita' and '$tglberita' <= sampai LIMIT 5, 10");
-        $jmlberita2 = count($berita2);        
+        $jmlberita2 = count($berita2);
         $berita3 = Db::select("SELECT * FROM berita WHERE dari >= '$tglberita' and '$tglberita' <= sampai LIMIT 10, 15");
-        $jmlberita3 = count($berita3);        
+        $jmlberita3 = count($berita3);
         $berita4 = Db::select("SELECT * FROM berita WHERE dari >= '$tglberita' and '$tglberita' <= sampai LIMIT 15, 20");
-        $jmlberita4 = count($berita4);        
+        $jmlberita4 = count($berita4);
         $berita5 = Db::select("SELECT * FROM berita WHERE dari >= '$tglberita' and '$tglberita' <= sampai LIMIT 20, 25");
-        $jmlberita5 = count($berita5);        
+        $jmlberita5 = count($berita5);
         $berita6 = Db::select("SELECT * FROM berita WHERE dari >= '$tglberita' and '$tglberita' <= sampai LIMIT 25, 30");
-        $jmlberita6 = count($berita6);        
+        $jmlberita6 = count($berita6);
     	return view('guest.layarfullpengumuman',compact('tgl','tes','hari','berita','berita2','berita3','berita4','berita5','berita6','jmlberita','jmlberita2','jmlberita3','jmlberita4','jmlberita5','jmlberita6'));
-    }      
+    }
 
     public function pemesanan_jadwal_ruang_kosong(){
         $mahasiswa = Mahasiswa::orderBy('created_at', 'desc')->get();
@@ -188,13 +188,13 @@ class GuestController extends Controller
         'dari'=>'required',
         'sampai'=>'required',
         'keterangan'=>'required',
-        ]);   
+        ]);
         $mahasiswa = Mahasiswa::orderBy('created_at', 'desc')->get();
         foreach($mahasiswa as $mhs){
             if(($request->input('ruangan') == $mhs->ruangan) && ($request->input('tanggal') == $mhs->tanggal) && ($request->input('dari') == $mhs->dari)){
         return redirect('/pemesanan_jadwal_ruang_kosong')->with('flash_message',
              'Gagal Karena Sudah Ada Yang Melakukan Pemesanan Terlebih Dahulu.');
-            } 
+            }
         }
         Mahasiswa::create($input);
         return redirect('/pemesanan_jadwal_ruang_kosong')->with('flash_message',

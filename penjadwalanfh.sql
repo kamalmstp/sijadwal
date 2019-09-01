@@ -280,7 +280,7 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (55, '2018_02_26_073943_buat__table_jadwal', 29),
 (56, '2019_06_04_151622_tambah_table_mahasiswa', 30),
 (57, '2019_07_09_120424_buat_table_organisasi', 31),
-(60, '2019_07_13_132344_buat_table_jadwalfeb', 32),
+(60, '2019_07_13_132344_buat_table_jadwalfh', 32),
 (62, '2019_07_16_122806_buat_table_listhistory', 33);
 
 -- --------------------------------------------------------
@@ -881,7 +881,7 @@ ALTER TABLE `items`
 --
 -- AUTO_INCREMENT untuk tabel `jadwalfeb`
 --
-ALTER TABLE `jadwalfeb`
+ALTER TABLE `jadwalfh`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
