@@ -31,12 +31,15 @@
             </thead>
             <tbody>
 
-            <?php $hari = array( 1 => 'Senin',
+            <?php 
+            $hari = array( 1 => 'Senin',
                 'Selasa',
                 'Rabu',
                 'Kamis',
                 'Jumat'
-             ); ?>
+             );
+            
+            ?>
 
              @for($i=1;$i<=5;$i++)
                 <tr style="text-align: center; font-family: arial; font-size: 10px;">
