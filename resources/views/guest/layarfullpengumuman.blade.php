@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>FEB - SIJADWAL</title>
+    <title>FH - SIJADWAL</title>
 
     <!-- Favicon -->
     <link rel="icon" href="{{asset('img/core-img/logounlam.png')}}">

@@ -49,7 +49,11 @@ class JadwalExportGanjil implements FromView, WithEvents
     public function view(): View
     {
         return view('jadwalfhexcelganjil', [
-            'jadwalfh' => Jadwalfh::where('id_tahunajaran', $this->id)->get(),
+            'jadwalfh1' => Jadwalfh::where('id_tahunajaran', $this->id)->where('hari','Senin')->get(),
+            'jadwalfh2' => Jadwalfh::where('id_tahunajaran', $this->id)->where('hari','Selasa')->get(),
+            'jadwalfh3' => Jadwalfh::where('id_tahunajaran', $this->id)->where('hari','Rabu')->get(),
+            'jadwalfh4' => Jadwalfh::where('id_tahunajaran', $this->id)->where('hari','Kamis')->get(),
+            'jadwalfh5' => Jadwalfh::where('id_tahunajaran', $this->id)->where('hari','Jumat')->get(),
             'id_tahunajaran' => tahun_ajaran::where('id_tahunajaran', $this->id)->first(),
             'jadwalguest' => Jadwalguest::where('id', 1)->first()  
         ]);
